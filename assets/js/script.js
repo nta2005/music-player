@@ -70,8 +70,8 @@ const app = {
   },
 
   loadConfig: function () {
-    this.isRandom = this.config.isRandom;
-    this.isRepeat = this.config.isRepeat;
+    this.isRandom = this.config.isRandom || false;
+    this.isRepeat = this.config.isRepeat || false;
 
     //Hiển thị trạng thái ban đầu của button repeat & random
     randomBtn.classList.toggle("active", this.isRandom);
